@@ -119,19 +119,20 @@ main {
     background-color: var(--purple);
 }
 
+main img {
+    width: 70%;
+}
+
 /* prima sezione */
 #intro {
     padding: 0 2rem;
+    padding-bottom: 3rem;
 }
 
 .card {
     background-color: var(--ligthblue);
     margin-bottom: 1.5rem;
     border-radius: 2rem;
-}
-
-main img {
-    width: 70%;
 }
 
 div.card h3,
@@ -166,16 +167,31 @@ div.card>p {
     border-radius: 4rem;
 }
 
-.fa-arrow-down {
+i.fa-arrow-down {
     font-size: 40px;
     color: var(--black);
 }
 
 .btn-purple {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
     background-color: var(--purple);
     color: var(--white);
-    padding: 1rem;
     border-radius: 50%;
+    width: max-content;
+}
+
+#planning img,
+#planning h2,
+#planning h3,
+#planning p,
+#planning a {
+    padding: 0 2rem 2rem 2rem;
+}
+
+#planning div {
+    padding-bottom: 2rem;
 }
 
 /* terza sezione */
@@ -188,13 +204,18 @@ div.card>p {
     background-color: var(--purple);
     color: var(--white);
     border-radius: 4rem;
+    padding-bottom: 2rem;
+    margin: 1rem;
+
 }
 
-#testimonials img {
-    width: 200px;
-    height: 200px;
+div.section3-img img {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    object-fit: contain;
+    background-color: red;
+    object-fit: center;
+
 }
 
 #testimonials div.section3-wrapper-purple {
@@ -213,8 +234,6 @@ div.section3-wrapper-purple h4 {
     color: var(--white);
 }
 
-
-
 .section4-wrapper-white {
     background-color: var(--white);
     color: var(--purple);
@@ -222,6 +241,19 @@ div.section3-wrapper-purple h4 {
     border-radius: 4rem;
     padding: 2rem;
 }
+
+/* quinta sezione */
+.section5-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.section5-img img {
+    object-fit: cover;
+}
+
 
 /* FOOTER */
 footer {
@@ -250,6 +282,15 @@ footer {
 
     #intro .card:first-child {
         width: calc(66.66% - 1.5rem);
+    }
+
+    .section4 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .section4-wrapper-white {
+        width: calc(100% / 2);
     }
 }
 
@@ -290,5 +331,8 @@ footer {
         max-width: 1140px;
     }
 
+    .section4-wrapper-white {
+        width: calc(100% / 3);
+    }
 
 }
