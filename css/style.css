@@ -27,7 +27,6 @@ body {
 .container {
     max-width: 600px;
     margin: 0 auto;
-    padding: 1rem;
 }
 
 .d-flex {
@@ -42,11 +41,33 @@ body {
     align-items: center;
 }
 
+/* BTN */
+
+.btn {
+    display: inline-block;
+    background-color: var(--blue);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+a.btn {
+    color: var(--white);
+    text-decoration: none;
+}
+
 /* HEADER */
 header {
     background-color: var(--blue);
+    padding: 1rem 2rem;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.5) 0.5rem 0.5rem 0.5rem;
 }
 
+/* HEADER MAIN MENU HIDDEN */
 header i {
     color: var(--white);
 }
@@ -56,22 +77,37 @@ header div.main-menu {
 }
 
 /* MAIN */
-/* main div.cards {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-} */
-
-main div.card {
-    background-color: var(--ligthblue);
-    /* margin-left: 0.75rem;
-    margin-right: 0.75rem; */
-    margin: 0.75rem;
-}
-
 #planning,
 #features,
 #get-started {
     background-color: var(--purple);
+}
+
+#intro {
+    padding: 0 2rem;
+    /* padding-top: 30px; */
+}
+
+.card {
+    background-color: var(--ligthblue);
+    /* margin-bottom: 1.5rem;
+    border-radius: 2rem; */
+}
+
+/* main img {
+    width: 100%;
+} */
+
+/* 
+div.card h3,
+div.card p,
+div.card a {
+    margin: 1rem;
+} */
+
+div.card h3 {
+    color: var(--blue);
+    /* padding-top: 1rem; */
 }
 
 /* FOOTER */
@@ -81,20 +117,40 @@ footer {
 
 
 /* RESPONSIVE */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 750px;
+    }
+
+    #intro .cards {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    #intro .card {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        width: calc(33.33% - 1.5rem);
+    }
+
+    #intro .card:first-child {
+        width: calc(66.66% - 1.5rem);
+
+        /* margin-left: -0.75rem;
+        margin-right: -0.75rem; */
     }
 }
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 992px) {
     .container {
-        max-width: 992px;
+        max-width: 960px;
     }
-}
+} */
 
-@media screen and (min-width: 1140px) {
+/* @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1200px;
+        max-width: 1140px;
     }
-}
+} */
