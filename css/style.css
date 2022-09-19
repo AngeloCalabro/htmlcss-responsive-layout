@@ -1,0 +1,100 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --blue: #0084FD;
+    --ligthblue: #B5DDFF;
+    --purple: #9792E4;
+    --yellow: #FDC15F;
+    --color-text: #738CA2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid black;
+    min-height: 50px;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: space-between;
+}
+
+.align-items {
+    align-items: center;
+}
+
+/* HEADER */
+header {
+    background-color: var(--blue);
+}
+
+header i {
+    color: var(--white);
+}
+
+header div.main-menu {
+    display: none;
+}
+
+/* MAIN */
+/* main div.cards {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+} */
+
+main div.card {
+    background-color: var(--ligthblue);
+    /* margin-left: 0.75rem;
+    margin-right: 0.75rem; */
+    margin: 0.75rem;
+}
+
+#planning,
+#features,
+#get-started {
+    background-color: var(--purple);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--black);
+}
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 600px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .container {
+        max-width: 1200px;
+    }
+}
