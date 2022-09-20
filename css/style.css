@@ -374,6 +374,12 @@ footer {
         margin-right: 0.75rem;
     }
 
+    #testimonials p.text-italic,
+    #testimonials div.text-uppercase {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
     .section4 {
         display: flex;
         flex-flow: row wrap;
@@ -403,11 +409,12 @@ footer {
 
 }
 
-/* @media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .container {
         max-width: 960px;
     }
 
+    /* NAV BAR */
     header i.fa-bars {
         display: none;
     }
@@ -430,7 +437,13 @@ footer {
         text-decoration: none;
         color: var(--white);
     }
-} */
+
+    #features .card-white {
+        width: calc((100% / 3) - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+}
 
 /* @media screen and (min-width: 1200px) {
     .container {
