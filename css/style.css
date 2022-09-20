@@ -24,7 +24,6 @@
 body {
     font-family: 'PT Sans', sans-serif;
     scroll-behavior: smooth;
-    scroll-margin-top: 80px;
 }
 
 .debug {
@@ -291,6 +290,7 @@ main {
 footer {
     padding: 0 2rem;
     padding-bottom: 3rem;
+    scroll-margin-top: 80px;
 }
 
 /* prima sezione */
