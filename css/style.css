@@ -6,9 +6,10 @@
     --purple: #9792E4;
     --yellow: #FDC15F;
     --color-text: #738CA2;
-    --font-xs: 16px;
-    --font-s: 20px;
-    --font-m: 30px;
+    --font-xs: 14px;
+    --font-text: 16px;
+    --font-s: 24px;
+    --font-m: 32px;
     --font-l: 42px;
     --font-xl: 50px;
     --font-xxl: 80px;
@@ -20,37 +21,14 @@
     box-sizing: border-box;
 }
 
-.debug {
-    border: 1px solid black;
-    min-height: 50px;
-}
-
 body {
     font-family: 'PT Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
-.title-l {
-    font-size: var(--font-xl);
-}
-
-.titele-m {
-    font-size: var(--font-l);
-}
-
-.title-s {
-    font-size: var(--font-m);
-    color: var(--blue);
-    font-weight: bold;
-}
-
-p {
-    font-size: var(--font-s);
-}
-
-.icon {
-    font-size: 60px;
-    color: var(--blue);
+.debug {
+    border: 1px solid black;
+    min-height: 50px;
 }
 
 .container {
@@ -58,6 +36,121 @@ p {
     margin: 0 auto;
 }
 
+/* TEXT */
+.title-l {
+    font-size: var(--font-l);
+    font-weight: bold;
+}
+
+.title-m {
+    font-size: var(--font-m);
+    font-weight: bold;
+}
+
+.title-s {
+    font-size: var(--font-s);
+    font-weight: bold;
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+p {
+    font-size: var(--font-text);
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 60px;
+    color: var(--blue);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* MARGIN - PADDING */
+.mt-1_5rem {
+    margin-top: 1.5rem;
+}
+
+.mb-1_5rem {
+    margin-bottom: 1.5rem;
+}
+
+.padd-1_5rem {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.padd-bott-1_5rem {
+    padding-bottom: 1.5rem;
+}
+
+.padd-top-6rem {
+    padding-top: 6rem;
+}
+
+.padd-bott-6rem {
+    padding-bottom: 6rem;
+}
+
+/* BORDER RADIUS */
+.br-1_5rem {
+    border-radius: 1.5rem;
+}
+
+.br-2rem {
+    border-radius: 2rem;
+}
+
+.br-50perc {
+    border-radius: 50%;
+}
+
+/* COLOR CARD */
+.card-lightblue {
+    background-color: var(--ligthblue);
+}
+
+.card-white {
+    background-color: var(--white);
+}
+
+.card-purple {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+/* FLEX */
 .d-flex {
     display: flex;
 }
@@ -70,7 +163,15 @@ p {
     align-items: center;
 }
 
+.column {
+    flex-direction: column;
+}
+
 /* BTN */
+
+a.btn {
+    text-decoration: none;
+}
 
 .btn {
     display: inline-block;
@@ -79,13 +180,14 @@ p {
     font-size: var(--font-xs);
 }
 
-a.btn {
-    text-decoration: none;
-}
-
 .btn-blue {
     background-color: var(--blue);
     color: var(--white);
+}
+
+.btn-purple {
+    background-color: var(--purple);
+    color: var(--black);
 }
 
 /* HEADER */
@@ -113,10 +215,8 @@ header .fa-bars:hover {
     cursor: pointer;
 }
 
-
 /* MAIN */
 main {
-    text-align: center;
     margin-top: 2rem;
 }
 
@@ -124,10 +224,6 @@ main {
 #features,
 #get-started {
     background-color: var(--purple);
-}
-
-#intro img {
-    width: 70%;
 }
 
 #intro,
@@ -140,137 +236,30 @@ main {
     padding-bottom: 3rem;
 }
 
-/* MARGIN - PADDING */
-.mb-1_5rem {
-    margin-bottom: 1.5rem;
-}
-
-.padd-1_5rem {
-    padding: 1.5rem 1.5rem 0 1.5rem;
-}
-
-
 /* prima sezione */
-
-.card {
-    background-color: var(--ligthblue);
-    border-radius: 1.5rem;
+#intro img {
+    width: 90%;
 }
-
-/* #intro {
-    padding: 0 2rem;
-    padding-bottom: 3rem;
-}
-
-.card {
-    background-color: var(--ligthblue);
-    margin-bottom: 1.5rem;
-    border-radius: 2rem;
-}
-
-div.card h3,
-div.card a {
-    margin-bottom: 1rem;
-}
-
-div.card h3 {
-    color: var(--blue);
-    padding-top: 1rem;
-}
-
-div.card>i {
-
-    padding-top: 2rem;
-}
-
-div.card>p {
-    padding: 0 2rem 2rem 2rem;
-} */
 
 /* seconda sezione */
-/* #planning {
-    padding: 0 2rem;
-    color: var(--white);
-}
 
 #planning img {
     width: 100%;
 }
 
-.section2-wrapper-white {
-    background-color: var(--white);
-    color: var(--black);
-    border-radius: 4rem;
-}
-
-i.fa-arrow-down {
-    font-size: 40px;
-    color: var(--black);
-}
-
-.btn-purple {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: var(--purple);
-    color: var(--white);
-    border-radius: 50%;
-    width: max-content;
-}
-
-#planning img,
-#planning h2,
-#planning h3,
-#planning p,
-#planning a {
-    padding: 0 2rem 2rem 2rem;
-}
-
-#planning div {
-    padding-bottom: 2rem;
-} */
-
 /* terza sezione */
-/* #testimonials {
-    padding: 0 2rem;
-    color: var(--black);
-}
-
-.section3-wrapper-purple {
-    background-color: var(--purple);
-    color: var(--white);
-    border-radius: 4rem;
-    padding-bottom: 2rem;
-    margin: 1rem;
-
-}
-
-div.section3-img img {
-    width: 250px;
-    height: 250px;
+.square-img img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background-color: red;
-    object-fit: center;
-
+    object-position: center;
 }
-
-.section3-wrapper-purple {
-    font-size: var(--font-xs);
-    font-style: oblique;
-    padding: 1rem;
-}
-
-div.section3-wrapper-purple h4 {
-    font-style: normal;
-    text-transform: uppercase;
-} */
 
 /* quarta sezione */
-/* #features {
-    padding: 0 2rem;
-    color: var(--white);
-}
 
+
+/*
 .section4-wrapper-white {
     background-color: var(--white);
     color: var(--purple);
@@ -279,9 +268,10 @@ div.section3-wrapper-purple h4 {
     padding: 2rem;
     margin: 0.75rem;
 }
+*/
 
 /* quinta sezione */
-.section5-img {
+/* .section5-img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -302,9 +292,9 @@ div.section3-wrapper-purple h4 {
 .section5-img img {
     display: block;
     object-fit: cover;
-}
+} */
 
-*/
+
 
 /* FOOTER */
 footer {
@@ -313,7 +303,7 @@ footer {
 
 
 /* RESPONSIVE */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .container {
         max-width: 750px;
     }
@@ -345,9 +335,9 @@ footer {
     .section4-wrapper-white {
         width: calc((100% / 2) - 1.5rem);
     }
-}
+} */
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     .container {
         max-width: 960px;
     }
@@ -374,9 +364,9 @@ footer {
         text-decoration: none;
         color: var(--white);
     }
-}
+} */
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
@@ -384,4 +374,4 @@ footer {
     .section4-wrapper-white {
         width: calc((100% / 3) - 1.5rem);
     }
-}
+} */
