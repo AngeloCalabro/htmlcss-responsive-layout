@@ -9,7 +9,7 @@
     --font-xs: 14px;
     --font-text: 16px;
     --font-s: 24px;
-    --font-m: 32px;
+    --font-m: 34px;
     --font-l: 42px;
     --font-xl: 50px;
     --font-xxl: 80px;
@@ -36,6 +36,14 @@ body {
     margin: 0 auto;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 /* TEXT */
 .title-l {
     font-size: var(--font-l);
@@ -58,6 +66,10 @@ body {
 
 .text-white {
     color: var(--white);
+}
+
+.text-yellow {
+    color: var(--yellow);
 }
 
 .text-black {
@@ -111,8 +123,20 @@ p {
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
+.padd-top-1_5rem {
+    padding-top: 1.5rem;
+}
+
 .padd-bott-1_5rem {
     padding-bottom: 1.5rem;
+}
+
+.padd-top-3rem {
+    padding-top: 3rem;
+}
+
+.padd-bott-3rem {
+    padding-bottom: 3rem;
 }
 
 .padd-top-6rem {
@@ -163,6 +187,10 @@ p {
     align-items: center;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .column {
     flex-direction: column;
 }
@@ -188,6 +216,17 @@ a.btn {
 .btn-purple {
     background-color: var(--purple);
     color: var(--black);
+}
+
+.btn-white {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.btn-width {
+    width: 150px;
+    text-align: center;
+    color: var(--white);
 }
 
 /* HEADER */
@@ -231,7 +270,8 @@ main {
 #testimonials,
 #features,
 #about-us,
-#get-started {
+#get-started,
+footer {
     padding: 0 2rem;
     padding-bottom: 3rem;
 }
@@ -248,6 +288,7 @@ main {
 }
 
 /* terza sezione */
+
 .square-img img {
     object-fit: cover;
     width: 150px;
@@ -259,18 +300,21 @@ main {
 /* quarta sezione */
 
 
-/*
-.section4-wrapper-white {
-    background-color: var(--white);
-    color: var(--purple);
-    text-align: left;
-    border-radius: 4rem;
-    padding: 2rem;
-    margin: 0.75rem;
-}
-*/
-
 /* quinta sezione */
+
+.square-img-relative {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.absolute-position-quote {
+    top: 0;
+    right: 0;
+    font-size: 50px;
+    color: var(--purple);
+}
+
 /* .section5-img {
     width: 100px;
     height: 100px;
