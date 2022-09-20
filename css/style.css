@@ -315,32 +315,8 @@ footer {
     color: var(--purple);
 }
 
-/* .section5-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: red;
-}
-
-#about-us img {
-    max-width: 100%;
-}
-
-#about-us h2,
-#about-us p,
-#about-us span {
-    padding: 2rem;
-}
-
-
-.section5-img img {
-    display: block;
-    object-fit: cover;
-} */
-
-
-
 /* FOOTER */
+
 footer {
     background-color: var(--black);
 }
