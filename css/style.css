@@ -24,6 +24,7 @@
 body {
     font-family: 'PT Sans', sans-serif;
     scroll-behavior: smooth;
+    scroll-margin-top: 80px;
 }
 
 .debug {
@@ -239,7 +240,8 @@ a.btn {
 }
 
 .btn-width-max {
-    min-width: 220px;
+    min-width: 200px;
+    max-width: 220px;
     text-align: center;
     color: var(--white);
 }
@@ -247,7 +249,7 @@ a.btn {
 /* HEADER */
 header {
     background-color: var(--blue);
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     position: sticky;
     width: 100%;
     top: 0;
@@ -339,9 +341,9 @@ footer {
 
 
 /* RESPONSIVE */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) {
     .container {
-        max-width: 750px;
+        max-width: 768px;
     }
 
     #intro .cards {
@@ -410,9 +412,9 @@ footer {
 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .container {
-        max-width: 960px;
+        max-width: 992px;
     }
 
     /* NAV BAR */
@@ -475,8 +477,8 @@ footer {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992) {
     .container {
-        max-width: 1140px;
+        max-width: 1200px;
     }
 }
