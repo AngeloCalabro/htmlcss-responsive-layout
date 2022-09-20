@@ -6,13 +6,13 @@
     --purple: #9792E4;
     --yellow: #FDC15F;
     --color-text: #738CA2;
-    --font-xs: 14px;
-    --font-text: 16px;
-    --font-s: 24px;
-    --font-m: 34px;
-    --font-l: 42px;
-    --font-xl: 50px;
-    --font-xxl: 80px;
+    --font-xs: 0.9rem;
+    --font-text: 1rem;
+    --font-s: 1.5rem;
+    --font-m: 2.2rem;
+    --font-l: 2.7rem;
+    --font-xl: 3.2rem;
+    --font-xxl: 5.5rem;
 }
 
 * {
@@ -36,6 +36,10 @@ body {
     margin: 0 auto;
 }
 
+.d-block {
+    display: block;
+}
+
 .relative {
     position: relative;
 }
@@ -45,6 +49,11 @@ body {
 }
 
 /* TEXT */
+.title-xxl {
+    font-size: var(--font-xxl);
+    font-weight: bold;
+}
+
 .title-l {
     font-size: var(--font-l);
     font-weight: bold;
@@ -82,7 +91,7 @@ body {
 
 p {
     font-size: var(--font-text);
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .icon {
@@ -224,7 +233,13 @@ a.btn {
 }
 
 .btn-width {
-    width: 150px;
+    min-width: 150px;
+    text-align: center;
+    color: var(--white);
+}
+
+.btn-width-max {
+    min-width: 220px;
     text-align: center;
     color: var(--white);
 }
@@ -323,7 +338,7 @@ footer {
 
 
 /* RESPONSIVE */
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         max-width: 750px;
     }
@@ -335,14 +350,28 @@ footer {
         margin-right: -0.75rem;
     }
 
-    #intro .card {
+    #intro .card-lightblue {
         margin-left: 0.75rem;
         margin-right: 0.75rem;
         width: calc(33.33% - 1.5rem);
     }
 
-    #intro .card:first-child {
+    #intro .card-lightblue:first-child {
         width: calc(66.66% - 1.5rem);
+    }
+
+    #intro .image-phone {
+        width: 60%;
+    }
+
+    .card-purple {
+        flex-direction: row;
+    }
+
+    .card-purple>img,
+    .card-purple>span {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
 
     .section4 {
@@ -352,10 +381,27 @@ footer {
         margin-right: -0.75rem;
     }
 
-    .section4-wrapper-white {
+    #features .card-white {
         width: calc((100% / 2) - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
-} */
+
+    #about-us>div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .about-us-left {
+        width: 60%;
+    }
+
+    .about-us-right {
+        width: 30%;
+    }
+
+}
 
 /* @media screen and (min-width: 992px) {
     .container {
