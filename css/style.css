@@ -292,6 +292,7 @@ footer {
 }
 
 /* prima sezione */
+
 #intro img {
     width: 90%;
 }
@@ -438,19 +439,44 @@ footer {
         color: var(--white);
     }
 
+    div.card-lightblue:first-child {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #intro .image-phone {
+        width: 100%;
+    }
+
     #features .card-white {
         width: calc((100% / 3) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
     }
+
+    #planning>div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #planning div.card-white {
+        margin-left: 2rem;
+    }
+
+    #planning div.card-white-left {
+
+        margin-right: 2rem;
+    }
+
+    #get-started div.container,
+    footer div.container {
+        max-width: 750px;
+    }
 }
 
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
-
-    .section4-wrapper-white {
-        width: calc((100% / 3) - 1.5rem);
-    }
-} */
+}
